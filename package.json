@@ -1,0 +1,39 @@
+{
+  "name": "filessert",
+  "version": "0.0.1",
+  "description": "A simple (CLI) tool to compare two files",
+  "author": {
+    "name": "Thomas Rasshofer",
+    "email": "hello@thomasrasshofer.com",
+    "url": "http://thomasrasshofer.com/"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rasshofer/filessert.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rasshofer/filessert/issues"
+  },
+  "main": "filessert.js",
+  "keywords": [
+    "file",
+    "assert",
+    "cli"
+  ],
+  "dependencies": {
+    "leprechaun": "0.0.2",
+    "nconf": "^0.8.4"
+  },
+  "devDependencies": {
+    "jshint": "^2.9.4",
+    "tap": "^10.3.0"
+  },
+  "scripts": {
+    "test": "jshint filessert.js cli.js test/tests.js && tap test/tests.js --cov"
+  },
+  "preferGlobal": "true",
+  "bin": {
+    "filessert": "cli.js"
+  }
+}
